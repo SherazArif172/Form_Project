@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./Assets/css/registration.css" />
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-r from-sky-500 to-indigo-500 flex content-center justify-center h-[100%] pb-20 pt-9 p-2"
+    >
+      <div class="w-[700px] h-[80%] bg-white pl-8 pr-8 mt-7 pt-5 rounded-md">
+        <header class="md:text-left text-center mb-8">
+          <h1 class="font-bold text-2xl font-serif">Registration</h1>
+        </header>
+        <form id="form">
+          <div class="border border-black border-solid w-40 mb-3 bg-slate-200">
+            <img
+              src="./Assets/images/user-icon-3d-render-png.png"
+              alt=""
+              id="image"
+            />
+          </div>
+          <div class="">
+            <div>
+              <input type="file" id="input-image" class="hidden" />
+            </div>
+            <div class="ms-4 mb-8">
+              <label
+                for="input-image"
+                class="cursor-pointer border border-solid border-black px-3 py-2 rounded-md bg-blue-600 text-white"
+                >Upload Image</label
+              >
+            </div>
+          </div>
+          <section class="mt-2">
+            <div class="grid md:grid-cols-2">
+              <div class="flex flex-col">
+                <label for="name" class="font-bold mb-2">Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="username" class="font-bold mb-2">Username</label>
+                <input
+                  type="text"
+                  placeholder="Enter your unername"
+                  id="username"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2">
+              <div class="flex flex-col">
+                <label for="email" class="font-bold mb-2">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  id="email"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="phone" class="font-bold mb-2">Phone Number</label>
+                <input
+                  type="tel"
+                  placeholder="Enter your number"
+                  id="phone"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2">
+              <div class="flex flex-col">
+                <label for="password" class="font-bold mb-2">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your passward"
+                  id="password"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="field" class="font-bold mb-2">Field</label>
+                <input
+                  type="text"
+                  placeholder="Mention your field"
+                  id="field"
+                  class="border border-black border-solid rounded-md pl-3 outline-none py-1 md:w-60 w-full mb-4"
+                />
+              </div>
+            </div>
+          </section>
+
+          <button
+            class="px-3 py-3 mt-8 w-full bg-gradient-to-r from-sky-500 to-indigo-500 mb-8 rounded-md font-bold font-serif text-white text-xl border-none"
+            id="submit"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+    <section
+      class="bg-black text-white pt-8 pb-8 h-full bg-gradient-to-r from-sky-500 to-indigo-500 mt-2"
+    >
+      <h1 class="font-bold text-3xl text-center mb-8">Out Put</h1>
+      <div class="w-full max-w-4xl overflow-x-auto mx-auto p-2">
+        <table class="fit-auto border-collapse border border-white w-full">
+          <thead class=""></thead>
+          <tbody class="maxmax" id="tbody">
+            <tr class="odd:bg-green-700 even:bg-slate-700">
+              <th nowrap class="border-collapse border border-white">Image</th>
+              <th nowrap class="border-collapse border border-white">
+                Full Name
+              </th>
+              <th nowrap class="border-collapse border border-white">
+                Username
+              </th>
+              <th nowrap class="border-collapse border border-white">Email</th>
+              <th nowrap class="border-collapse border border-white">
+                P-Number
+              </th>
+              <th nowrap class="border-collapse border border-white">
+                Password
+              </th>
+              <th nowrap class="border-collapse border border-white">Field</th>
+            </tr>
+            <!-- <tr class="text-center odd:bg-green-700 even:bg-slate-600">
+              <td class="border-collapse border border-white text-center">
+                <div
+                  class="border border-black border-solid max-w-40 bg-slate-200"
+                >
+                  <img
+                    src="./Assets/images/user-icon-3d-render-png.png"
+                    alt=""
+                    id="outimage"
+                  />
+                </div>
+              </td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              ></td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              ></td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              ></td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              ></td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              ></td>
+              <td
+                class="min-w-24 border-collapse border border-white text-center"
+              >
+                sheraz
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script src="./Assets/js/registration.js"></script>
+</html>
